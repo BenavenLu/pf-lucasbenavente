@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/* Media Querys para pagina de Inicio */
+@media (max-width: 770px) {
+  .imagenmastxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagenfondo {
+    width: 300px;
+    height: 400px;
+  }
+  .navbarnav {
+    margin: auto;
+  }
+}
+/* Media Querys para Pagina de armado de equipo */
+@media (max-width: 977px) {
+  .contenedorpadre {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: auto;
+  }
+}
+@media (max-width: 1750px) {
+  .div1 {
+    height: 800px;
+    width: 300px;
+  }
+  .imagenmastxt .div1 .tamaño2 {
+    margin: 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-color: black;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  /* Boostrap nav */
+}
+header h1 {
+  text-align: center;
+  color: cornsilk;
+  text-decoration: underline;
+  margin: 30px;
+}
+header .navbarnav {
+  background-color: darkorchid;
+}
+header .navlogo {
+  width: 120px;
+  height: 70px;
+}
+header ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+header ul li {
+  font-size: 20px;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+}
+header ul li a {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+header ul li:hover {
+  background: linear-gradient(rgb(222, 222, 255), darkorchid);
+}
+
+main {
+  margin: 20px;
+  padding: 20px;
+  /* Modificamos el texto y imagen de fondo del index */
+  /* parrafo pagina principal  */
+}
+main .imagenmastxt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* subtitulos */
+}
+main .imagenmastxt .div1 {
+  border-image: linear-gradient(70deg, darkblue, darkorchid);
+  border-width: 6px;
+  border-style: solid;
+  border-image-slice: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* parrafo pagina principal  */
+}
+main .imagenmastxt .div1 .tamaño2 {
+  margin-bottom: 120px;
+  margin-left: 450px;
+  font-size: 40px;
+  color: darkorchid;
+}
+main .imagenmastxt .div1 .parrafo1 {
+  color: darkblue;
+  background: linear-gradient(rgb(222, 222, 255), darkorchid);
+  margin: 20px;
+  font-size: 20px;
+}
+main .imagenmastxt .imagenfondo {
+  width: 700px;
+  height: 800px;
+}
+main .tamaño3 {
+  text-align: center;
+  font-size: 40px;
+  color: darkorchid;
+  margin-bottom: 120px;
+}
+main .parrafo1 {
+  color: darkblue;
+  background: linear-gradient(rgb(222, 222, 255), darkorchid);
+  margin: 20px;
+  font-size: 20px;
+}
+
+/* Footer */
+.lineafooter {
+  margin: auto;
+  width: 50%;
+  height: 2px;
+  background-color: silver;
+}
+.lineafooter .h4index {
+  color: cornsilk;
+  text-align: center;
+  font-size: 50px;
+}
+
+/* Formulario de contacto */
+form .nombremenu {
+  color: white;
+  padding-left: 20px;
+}
+form .textarea {
+  padding-right: 20px;
+}
+form .enviar {
+  padding-right: 100px;
+}
+form .borrar {
+  padding-right: 100px;
+}
+
+/* Modificamos la pagina de ARMADO DE EQUIPO */
+.contenedorpadre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 30vw;
+}
+.contenedorpadre .contenedorhijo {
+  position: relative;
+  height: 300px;
+  width: 400px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px darkorchid;
+  cursor: pointer;
+}
+.contenedorpadre .contenedorhijo img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+.contenedorpadre .contenedorhijo .contenidoimg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(169, 169, 169, 0.4);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+.contenedorpadre .contenedorhijo .contenidoimg h3 {
+  color: aliceblue;
+  font-weight: bold;
+}
+.contenedorpadre .contenedorhijo .contenidoimg p {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 4px;
+}
+.contenedorpadre .contenedorhijo:hover > .contenidoimg {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*# sourceMappingURL=estilos.css.map */
