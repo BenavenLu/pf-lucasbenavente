@@ -1,4 +1,5 @@
-@import "mediaq";
+
+@import "variables";
 
 * {
     margin: 0;
@@ -7,60 +8,66 @@
 }
 
 body {
-    background-color: black;
+    background-color: $background-color_1;
 
     font-weight: 900;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-family_1;
 }
 
 header {
 
     h1 {
         text-align: center;
-        color: cornsilk;
+        color: $color_2;
         text-decoration: underline;
         margin: 30px;
     }
 
     /* Boostrap nav */
     .navbarnav {
-        background-color: darkorchid;
+        background-color: $background-color_2;
 
-    }
+        .navlogo {
+            width: 120px;
+            height: 70px;
+        }
 
-    .navlogo {
-        width: 120px;
-        height: 70px;
-    }
+        ul {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
 
-    ul {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
+            li {
 
-        li {
+                font-size: 20px;
 
-            font-size: 20px;
+                list-style: none;
+                position: relative;
+                display: inline-block;
 
-            list-style: none;
-            position: relative;
-            display: inline-block;
+                a {
+                    color: $color_1;
+                    text-transform: uppercase;
+                }
 
-            a {
-                color: rgb(0, 0, 0);
-                text-transform: uppercase;
             }
 
+            li:hover {
+                background: linear-gradient(rgb(222, 222, 255), darkorchid);
+
+            }
         }
 
-        li:hover {
-            background: linear-gradient(rgb(222, 222, 255), darkorchid);
-
-        }
     }
 
-
 }
+
+
+
+
+
+
+
 
 main {
     margin: 20px;
@@ -86,7 +93,7 @@ main {
                 margin-bottom: 120px;
                 margin-left: 450px;
                 font-size: 40px;
-                color: darkorchid;
+                color: $color_3;
 
             }
 
@@ -108,13 +115,13 @@ main {
     .tamaño3 {
         text-align: center;
         font-size: 40px;
-        color: darkorchid;
+        color: $color_3;
         margin-bottom: 120px;
     }
 
-      /* parrafo pagina principal  */
-      .parrafo1 {
-        color: darkblue;
+    /* parrafo pagina principal  */
+    .parrafo1 {
+        color: $color_4;
         background: linear-gradient(rgb(222, 222, 255), darkorchid);
         margin: 20px;
         font-size: 20px;
@@ -128,10 +135,10 @@ main {
     margin: auto;
     width: 50%;
     height: 2px;
-    background-color: silver;
+    background-color: $background-color_3;
 
     .h4index {
-        color: cornsilk;
+        color: $color_2;
         text-align: center;
         font-size: 50px;
 
@@ -139,11 +146,11 @@ main {
 
 }
 
-/* Formulario de contacto */
+// /* Formulario de contacto */
 form {
 
     .nombremenu {
-        color: white;
+        color: $color_5;
         padding-left: 20px;
     }
 
@@ -197,12 +204,12 @@ form {
             text-align: center;
 
             h3 {
-                color: aliceblue;
+                color: $color_6;
                 font-weight: bold;
             }
 
             p {
-                color: rgb(0, 0, 0);
+                color: $color_1;
                 text-transform: uppercase;
                 font-weight: bold;
                 padding: 4px;
