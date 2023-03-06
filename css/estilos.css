@@ -69,8 +69,7 @@ main .imagenmastxt .div1 {
   /* parrafo pagina principal  */
 }
 main .imagenmastxt .div1 .tamaño2 {
-  margin-bottom: 120px;
-  margin-left: 450px;
+  text-align: center;
   font-size: 40px;
   color: darkorchid;
 }
@@ -110,6 +109,11 @@ main .parrafo1 {
   font-size: 50px;
 }
 
+form {
+  margin-left: 45rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 form .nombremenu {
   color: white;
   padding-left: 20px;
@@ -171,6 +175,12 @@ form .borrar {
   visibility: visible;
 }
 
+.videomecanica {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Media Querys para Pagina de armado de equipo */
 @media (max-width: 977px) {
   .contenedorpadre {
@@ -194,6 +204,7 @@ form .borrar {
   }
   .navbarnav {
     margin: auto;
+    padding: auto;
   }
 }
 @media (max-width: 1750px) {
@@ -201,8 +212,15 @@ form .borrar {
     height: 800px;
     width: 300px;
   }
-  .imagenmastxt .div1 .tamaño2 {
-    margin: 0;
+  form {
+    margin-left: 0;
+  }
+}
+@media (max-width: 601px) {
+  .videomecanica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

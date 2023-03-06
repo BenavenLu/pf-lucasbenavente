@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixin";
 @import "mediasq";
 
 
@@ -10,10 +11,10 @@
 
 body {
     background-color: $background-color_1;
-
     font-weight: 900;
     font-family: $font-family_1;
 }
+
 
 header {
 
@@ -54,7 +55,7 @@ header {
             }
 
             li:hover {
-                background: linear-gradient(rgb(222, 222, 255), darkorchid);
+                @include gradiente;
 
             }
         }
@@ -62,11 +63,6 @@ header {
     }
 
 }
-
-
-
-
-
 
 
 
@@ -91,8 +87,9 @@ main {
             justify-content: center;
 
             .tamaño2 {
-                margin-bottom: 120px;
-                margin-left: 450px;
+                // margin-bottom: 120px;
+                // margin-left: 450px;
+                text-align: center;
                 font-size: 40px;
                 color: $color_3;
 
@@ -101,7 +98,7 @@ main {
             /* parrafo pagina principal  */
             .parrafo1 {
                 color: darkblue;
-                background: linear-gradient(rgb(222, 222, 255), darkorchid);
+                @include gradiente;
                 margin: 20px;
                 font-size: 20px;
             }
@@ -123,12 +120,13 @@ main {
     /* parrafo pagina principal  */
     .parrafo1 {
         color: $color_4;
-        background: linear-gradient(rgb(222, 222, 255), darkorchid);
+        @include gradiente;
         margin: 20px;
         font-size: 20px;
     }
 
 }
+
 
 
 /* Footer */
@@ -149,6 +147,10 @@ main {
 
 // /* Formulario de contacto */
 form {
+
+    margin-left: 45rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
     .nombremenu {
         color: $color_5;
@@ -226,6 +228,13 @@ form {
 
 }
 
+// modificamos la pagina de mecanicas
+.videomecanica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 
 /* Media Querys para Pagina de armado de equipo */
 @media (max-width: 977px){
@@ -254,6 +263,7 @@ form {
 
     .navbarnav {
         margin: auto;
+        padding: auto;
     }
 
 }
@@ -262,11 +272,30 @@ form {
     .div1 {
         height: 800px;
         width: 300px;
+
+        // .tamaño2 {
+        //     margin-bottom: auto;
+        //     margin-left: auto;
+        // }
+        
     }
 
-    .imagenmastxt .div1 .tamaño2 {
-        margin: 0;
-
-
+    form{
+        margin-left: 0;
+        
     }
+
+    // .imagenmastxt .div1 .tamaño2 {
+    //     margin: 0;
+    // }
+}
+
+// Pagina de mecanicas
+@media (max-width: 601px){
+    .videomecanica{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
 }
