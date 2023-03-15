@@ -223,5 +223,17 @@ form .borrar {
     align-items: center;
   }
 }
+@media (max-width: 701px) {
+  main .imagenmastxt .imagenfondo {
+    width: 320px;
+    height: 500px;
+  }
+}
+@media (max-width: 803px) {
+  .imgskins {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */

@@ -42,7 +42,6 @@ header {
             li {
 
                 font-size: 20px;
-
                 list-style: none;
                 position: relative;
                 display: inline-block;
@@ -229,26 +228,29 @@ form {
 }
 
 // modificamos la pagina de mecanicas
-.videomecanica{
+.videomecanica {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
+
+
 
 
 /* Media Querys para Pagina de armado de equipo */
-@media (max-width: 977px){
+@media (max-width: 977px) {
     .contenedorpadre {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        height: auto; 
+        height: auto;
     }
 
 }
 
 /* Media Querys para pagina de Inicio */
 @media (max-width: 770px) {
+
     .imagenmastxt {
         display: flex;
         flex-direction: column;
@@ -273,29 +275,37 @@ form {
         height: 800px;
         width: 300px;
 
-        // .tamaño2 {
-        //     margin-bottom: auto;
-        //     margin-left: auto;
-        // }
-        
+
     }
 
-    form{
+    form {
         margin-left: 0;
-        
+
     }
 
-    // .imagenmastxt .div1 .tamaño2 {
-    //     margin: 0;
-    // }
+
 }
 
 // Pagina de mecanicas
-@media (max-width: 601px){
-    .videomecanica{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+@media (max-width: 601px) {
+    .videomecanica {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
+}
+
+@media (max-width: 701px) {
+    main .imagenmastxt .imagenfondo {
+        width: 320px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 803px) {
+    .imgskins {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
