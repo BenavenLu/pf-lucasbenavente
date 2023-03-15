@@ -231,7 +231,6 @@ form .borrar {
 }
 @media (max-width: 803px) {
   .imgskins {
-    margin-left: 0%;
     width: 100%;
   }
 }
