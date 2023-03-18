@@ -30,7 +30,7 @@ header {
         background-color: $background-color_2;
 
         .navlogo {
-            width: 120px;
+            width: 100px;
             height: 70px;
         }
 
@@ -215,6 +215,10 @@ form {
                 text-transform: uppercase;
                 font-weight: bold;
                 padding: 4px;
+                
+                .equipodescription{
+                    color: $color_3;
+                }
             }
         }
 

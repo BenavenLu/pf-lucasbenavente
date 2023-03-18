@@ -24,7 +24,7 @@ header .navbarnav {
   background-color: darkorchid;
 }
 header .navbarnav .navlogo {
-  width: 120px;
+  width: 100px;
   height: 70px;
 }
 header .navbarnav ul {
@@ -169,6 +169,9 @@ form .borrar {
   text-transform: uppercase;
   font-weight: bold;
   padding: 4px;
+}
+.contenedorpadre .contenedorhijo .contenidoimg p .equipodescription {
+  color: darkorchid;
 }
 .contenedorpadre .contenedorhijo:hover > .contenidoimg {
   opacity: 1;
