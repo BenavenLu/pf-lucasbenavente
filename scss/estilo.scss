@@ -96,7 +96,7 @@ main {
 
             /* parrafo pagina principal  */
             .parrafo1 {
-                color: darkblue;
+                color: $color_4;
                 @include gradiente;
                 margin: 20px;
                 font-size: 20px;
@@ -234,6 +234,19 @@ form {
     align-items: center;
 }
 
+.mecanicachamp {
+    margin-top: 200px;
+    display: flex;
+    
+    .mecanicatxt {
+        color: $color_4;
+        @include gradiente;
+        margin: 20px;
+        font-size: 20px;
+    }
+
+
+}
 
 
 
@@ -266,6 +279,11 @@ form {
     .navbarnav {
         margin: auto;
         padding: auto;
+    }
+
+    .mecanicachamp {
+        display: flex;
+        flex-direction: column;
     }
 
 }
@@ -306,5 +324,12 @@ form {
 @media (max-width: 803px) {
     .imgskins {
         width: 100%;
+    }
+}
+
+@media (max-width: 443px) {
+    .videomecanica2{
+        width: auto;
+        height: auto;
     }
 }

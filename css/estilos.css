@@ -181,6 +181,17 @@ form .borrar {
   align-items: center;
 }
 
+.mecanicachamp {
+  margin-top: 200px;
+  display: flex;
+}
+.mecanicachamp .mecanicatxt {
+  color: darkblue;
+  background: linear-gradient(rgb(222, 222, 255), darkorchid);
+  margin: 20px;
+  font-size: 20px;
+}
+
 /* Media Querys para Pagina de armado de equipo */
 @media (max-width: 977px) {
   .contenedorpadre {
@@ -205,6 +216,10 @@ form .borrar {
   .navbarnav {
     margin: auto;
     padding: auto;
+  }
+  .mecanicachamp {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 1750px) {
@@ -232,6 +247,12 @@ form .borrar {
 @media (max-width: 803px) {
   .imgskins {
     width: 100%;
+  }
+}
+@media (max-width: 443px) {
+  .videomecanica2 {
+    width: auto;
+    height: auto;
   }
 }
 
