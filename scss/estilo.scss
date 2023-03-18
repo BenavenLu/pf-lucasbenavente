@@ -1,6 +1,5 @@
 @import "variables";
 @import "mixin";
-@import "mediasq";
 
 
 * {
@@ -29,7 +28,7 @@ header {
     .navbarnav {
         background-color: $background-color_2;
 
-        .navlogo {
+        .navLogo {
             width: 100px;
             height: 70px;
         }
@@ -70,7 +69,7 @@ main {
     padding: 20px;
 
     /* Modificamos el texto y imagen de fondo del index */
-    .imagenmastxt {
+    .imagenMasTxt {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -103,7 +102,7 @@ main {
             }
         }
 
-        .imagenfondo {
+        .imagenFondo {
             width: 700px;
             height: 800px;
         }
@@ -129,7 +128,7 @@ main {
 
 
 /* Footer */
-.lineafooter {
+.lineaFooter {
     margin: auto;
     width: 50%;
     height: 2px;
@@ -141,7 +140,17 @@ main {
         font-size: 50px;
 
     }
-
+.redes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+a{
+    font-size: 50px;
+    text-decoration: none;
+}
+    
+}
 }
 
 // /* Formulario de contacto */
@@ -151,7 +160,7 @@ form {
     margin-top: 50px;
     margin-bottom: 50px;
 
-    .nombremenu {
+    .nombreMenu {
         color: $color_5;
         padding-left: 20px;
     }
@@ -173,14 +182,14 @@ form {
 
 /* Modificamos la pagina de ARMADO DE EQUIPO */
 
-.contenedorpadre {
+.contenedorPadre {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 30vw;
 
-    .contenedorhijo {
+    .contenedorHijo {
         position: relative;
         height: 300px;
         width: 400px;
@@ -194,7 +203,7 @@ form {
             transition: all 500ms ease-out;
         }
 
-        .contenidoimg {
+        .contenidoImg {
             position: absolute;
             top: 0;
             width: 100%;
@@ -216,15 +225,15 @@ form {
                 font-weight: bold;
                 padding: 4px;
                 
-                .equipodescription{
-                    color: $color_3;
+                .equipoDescription{
+                    color: rgb(115, 255, 0);
                 }
             }
         }
 
     }
 
-    .contenedorhijo:hover>.contenidoimg {
+    .contenedorHijo:hover>.contenidoImg {
         opacity: 1;
         visibility: visible;
     }
@@ -232,17 +241,17 @@ form {
 }
 
 // modificamos la pagina de mecanicas
-.videomecanica {
+.videoMecanica {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.mecanicachamp {
+.mecanicaChamp {
     margin-top: 200px;
     display: flex;
     
-    .mecanicatxt {
+    .mecanicaTxt {
         color: $color_4;
         @include gradiente;
         margin: 20px;
@@ -256,7 +265,7 @@ form {
 
 /* Media Querys para Pagina de armado de equipo */
 @media (max-width: 977px) {
-    .contenedorpadre {
+    .contenedorPadre {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -268,14 +277,14 @@ form {
 /* Media Querys para pagina de Inicio */
 @media (max-width: 770px) {
 
-    .imagenmastxt {
+    .imagenMasTxt {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .imagenfondo {
+    .imagenFondo {
         width: 300px;
         height: 400px;
     }
@@ -285,7 +294,7 @@ form {
         padding: auto;
     }
 
-    .mecanicachamp {
+    .mecanicaChamp {
         display: flex;
         flex-direction: column;
     }
@@ -310,7 +319,7 @@ form {
 
 // Pagina de mecanicas
 @media (max-width: 601px) {
-    .videomecanica {
+    .videoMecanica {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -319,7 +328,7 @@ form {
 }
 
 @media (max-width: 701px) {
-    main .imagenmastxt .imagenfondo {
+    main .imagenMasTxt .imagenFondo {
         width: 320px;
         height: 500px;
     }
@@ -332,7 +341,7 @@ form {
 }
 
 @media (max-width: 443px) {
-    .videomecanica2{
+    .videoMecanica2{
         width: auto;
         height: auto;
     }

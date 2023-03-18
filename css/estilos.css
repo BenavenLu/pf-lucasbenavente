@@ -23,7 +23,7 @@ header h1 {
 header .navbarnav {
   background-color: darkorchid;
 }
-header .navbarnav .navlogo {
+header .navbarnav .navLogo {
   width: 100px;
   height: 70px;
 }
@@ -52,13 +52,13 @@ main {
   /* Modificamos el texto y imagen de fondo del index */
   /* parrafo pagina principal  */
 }
-main .imagenmastxt {
+main .imagenMasTxt {
   display: flex;
   justify-content: center;
   align-items: center;
   /* subtitulos */
 }
-main .imagenmastxt .div1 {
+main .imagenMasTxt .div1 {
   border-image: linear-gradient(70deg, darkblue, darkorchid);
   border-width: 6px;
   border-style: solid;
@@ -68,18 +68,18 @@ main .imagenmastxt .div1 {
   justify-content: center;
   /* parrafo pagina principal  */
 }
-main .imagenmastxt .div1 .tamaño2 {
+main .imagenMasTxt .div1 .tamaño2 {
   text-align: center;
   font-size: 40px;
   color: darkorchid;
 }
-main .imagenmastxt .div1 .parrafo1 {
+main .imagenMasTxt .div1 .parrafo1 {
   color: darkblue;
   background: linear-gradient(rgb(222, 222, 255), darkorchid);
   margin: 20px;
   font-size: 20px;
 }
-main .imagenmastxt .imagenfondo {
+main .imagenMasTxt .imagenFondo {
   width: 700px;
   height: 800px;
 }
@@ -97,16 +97,25 @@ main .parrafo1 {
 }
 
 /* Footer */
-.lineafooter {
+.lineaFooter {
   margin: auto;
   width: 50%;
   height: 2px;
   background-color: silver;
 }
-.lineafooter .h4index {
+.lineaFooter .h4index {
   color: cornsilk;
   text-align: center;
   font-size: 50px;
+}
+.lineaFooter .redes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.lineaFooter .redes a {
+  font-size: 50px;
+  text-decoration: none;
 }
 
 form {
@@ -114,7 +123,7 @@ form {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-form .nombremenu {
+form .nombreMenu {
   color: white;
   padding-left: 20px;
 }
@@ -129,14 +138,14 @@ form .borrar {
 }
 
 /* Modificamos la pagina de ARMADO DE EQUIPO */
-.contenedorpadre {
+.contenedorPadre {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 30vw;
 }
-.contenedorpadre .contenedorhijo {
+.contenedorPadre .contenedorHijo {
   position: relative;
   height: 300px;
   width: 400px;
@@ -144,12 +153,12 @@ form .borrar {
   box-shadow: 0px 0px 15px darkorchid;
   cursor: pointer;
 }
-.contenedorpadre .contenedorhijo img {
+.contenedorPadre .contenedorHijo img {
   width: 100%;
   height: 100%;
   transition: all 500ms ease-out;
 }
-.contenedorpadre .contenedorhijo .contenidoimg {
+.contenedorPadre .contenedorHijo .contenidoImg {
   position: absolute;
   top: 0;
   width: 100%;
@@ -160,35 +169,35 @@ form .borrar {
   visibility: hidden;
   text-align: center;
 }
-.contenedorpadre .contenedorhijo .contenidoimg h3 {
+.contenedorPadre .contenedorHijo .contenidoImg h3 {
   color: aliceblue;
   font-weight: bold;
 }
-.contenedorpadre .contenedorhijo .contenidoimg p {
+.contenedorPadre .contenedorHijo .contenidoImg p {
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   font-weight: bold;
   padding: 4px;
 }
-.contenedorpadre .contenedorhijo .contenidoimg p .equipodescription {
-  color: darkorchid;
+.contenedorPadre .contenedorHijo .contenidoImg p .equipoDescription {
+  color: rgb(115, 255, 0);
 }
-.contenedorpadre .contenedorhijo:hover > .contenidoimg {
+.contenedorPadre .contenedorHijo:hover > .contenidoImg {
   opacity: 1;
   visibility: visible;
 }
 
-.videomecanica {
+.videoMecanica {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.mecanicachamp {
+.mecanicaChamp {
   margin-top: 200px;
   display: flex;
 }
-.mecanicachamp .mecanicatxt {
+.mecanicaChamp .mecanicaTxt {
   color: darkblue;
   background: linear-gradient(rgb(222, 222, 255), darkorchid);
   margin: 20px;
@@ -197,7 +206,7 @@ form .borrar {
 
 /* Media Querys para Pagina de armado de equipo */
 @media (max-width: 977px) {
-  .contenedorpadre {
+  .contenedorPadre {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -206,13 +215,13 @@ form .borrar {
 }
 /* Media Querys para pagina de Inicio */
 @media (max-width: 770px) {
-  .imagenmastxt {
+  .imagenMasTxt {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .imagenfondo {
+  .imagenFondo {
     width: 300px;
     height: 400px;
   }
@@ -220,7 +229,7 @@ form .borrar {
     margin: auto;
     padding: auto;
   }
-  .mecanicachamp {
+  .mecanicaChamp {
     display: flex;
     flex-direction: column;
   }
@@ -235,14 +244,14 @@ form .borrar {
   }
 }
 @media (max-width: 601px) {
-  .videomecanica {
+  .videoMecanica {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 @media (max-width: 701px) {
-  main .imagenmastxt .imagenfondo {
+  main .imagenMasTxt .imagenFondo {
     width: 320px;
     height: 500px;
   }
@@ -253,7 +262,7 @@ form .borrar {
   }
 }
 @media (max-width: 443px) {
-  .videomecanica2 {
+  .videoMecanica2 {
     width: auto;
     height: auto;
   }
